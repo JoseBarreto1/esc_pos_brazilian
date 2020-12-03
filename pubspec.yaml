@@ -1,0 +1,20 @@
+name: esc_pos_brazilian
+description: Biblioteca para imprimir ESC/POS thermal Bluetooth printer.
+version: 0.0.1
+homepage: https://github.com/JoseBarreto1/esc_pos_brazilian
+
+environment:
+  sdk: ">=2.3.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  rxdart: ^0.24.0
+  esc_pos_utils: ^0.3.6
+  flutter_bluetooth_brazilian: ^0.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
