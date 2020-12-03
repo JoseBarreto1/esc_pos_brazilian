@@ -6,7 +6,7 @@ import 'package:path_provider/path_provider.dart';
 import 'package:flutter/services.dart';
 import 'package:image/image.dart';
 import 'package:esc_pos_utils/esc_pos_utils.dart';
-import 'package:esc_pos_bluetooth/esc_pos_brazilian.dart';
+import 'package:esc_pos_brazilian/esc_pos_brazilian.dart';
 import 'package:flutter/material.dart' hide Image;
 import 'package:oktoast/oktoast.dart';
 
@@ -66,10 +66,10 @@ class _MyHomePageState extends State<MyHomePage> {
     final Ticket ticket = Ticket(paper);
 
     // Print image
-    final ByteData data = await rootBundle.load('assets/rabbit_black.jpg');
+    final ByteData data = await rootBundle.load('assets/logo.png');
     final Uint8List bytes = data.buffer.asUint8List();
     final Image image = decodeImage(bytes);
-    // ticket.image(image);
+    //ticket.image(image, align: PosAlign.center);
 
     ticket.text('GROCERYLY',
         styles: PosStyles(
